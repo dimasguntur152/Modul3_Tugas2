@@ -84,6 +84,7 @@ public class HitungNilaiMahasiswa {
         System.out.println("Status         : " + tentukanStatusKelulusan());
     }
 
+
     /**
      * Mengambil nama mahasiswa yang disimpan.
      * @return Nama mahasiswa dalam bentuk String.
