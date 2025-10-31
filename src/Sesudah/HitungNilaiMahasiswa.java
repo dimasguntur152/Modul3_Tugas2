@@ -55,6 +55,19 @@ public class HitungNilaiMahasiswa {
     }
 
     /**
+     * Menentukan status kelulusan berdasarkan grade.
+     * @return "Lulus" jika grade A, B, atau C. Jika tidak, "Tidak Lulus".
+     */
+    public String tentukanStatusKelulusan() {
+        String grade = tentukanGrade();
+        if (grade.equals("A") || grade.equals("B") || grade.equals("C")) {
+            return "Lulus";
+        } else {
+            return "Tidak Lulus";
+        }
+    }
+
+    /**
      * Method ini menampilkan data mahasiswa beserta nilai akhir dan grade.
      */
     public void tampilkanData() {
@@ -68,6 +81,7 @@ public class HitungNilaiMahasiswa {
         System.out.println("Nilai UAS      : " + nilaiUAS);
         System.out.println("Nilai Akhir    : " + nilaiAkhir);
         System.out.println("Grade          : " + tentukanGrade());
+        System.out.println("Status         : " + tentukanStatusKelulusan());
     }
 
     /**
